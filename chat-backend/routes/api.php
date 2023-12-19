@@ -20,3 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('login', [\App\Http\Controllers\API\AuthController::class, 'login']);
 Route::post('register', [\App\Http\Controllers\API\AuthController::class, 'register']);
+
+
+Route::resource('groups', App\Http\Controllers\API\GroupAPIController::class)
+    ->except(['create', 'edit']);
