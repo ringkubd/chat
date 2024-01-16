@@ -16,7 +16,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "flipper": true
+      "flipper": true,
+      "bundleIdentifier": "com.ringkubd.chat"
     },
     "android": {
       "adaptiveIcon": {

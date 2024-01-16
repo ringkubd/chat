@@ -10,6 +10,7 @@ try {
         apiKey: process.env.EXPO_PUBLIC_SOKETI_API_KEY,
         cluster: 'm2',
         onAuthorizer: async (channelName, socketId) => {
+            console.log(channelName)
             return await Axios.post('broadcasting/auth', {
                 socket_id: socketId,
                 channel_name: channelName
